@@ -1,0 +1,49 @@
+site_name: AutoCut for DaVinci Resolve
+site_description: >-
+  Automatic silence removal with real J-cuts for the free version of
+  DaVinci Resolve.
+site_url: https://ezin-rev.github.io/resolve-jcut/
+repo_url: https://github.com/ezin-rev/resolve-jcut
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      toggle:
+        icon: material/brightness-7
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Light mode
+  features:
+    - navigation.sections
+    - navigation.footer
+    - content.code.copy
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - toc:
+      permalink: true
+  - pymdownx.highlight
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - How It Works: how-it-works.md
+  - Parameter Reference: parameters.md
+  - Developer Guide:
+      - Architecture: developer/index.md
+      - Bridge Protocol: developer/bridge-protocol.md
+      - Frame Spaces: developer/frame-spaces.md
+      - Testing & Debugging: developer/testing.md

@@ -2,6 +2,8 @@
 __pycache__/
 *.pyc
 tests/_artifacts/
+site/
+.DS_Store
 
 # Claude Code files — local dev notes, not for the public repo
 CLAUDE.md

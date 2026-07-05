@@ -128,9 +128,11 @@ distilled model automatically.
 uv run python tests/test_autocut.py    # offline suite, no Resolve needed
 ```
 
-See `CLAUDE.md` for architecture notes, including the Resolve API quirks this
-tool works around (sandboxed script processes, FCPXML importer behavior,
-Tk 9 threading).
+Full documentation — pipeline internals, every parameter, the bridge
+protocol, and the Resolve API quirks this tool works around (sandboxed
+script processes, FCPXML importer behavior, Tk 9 threading) — lives in
+[`docs/`](docs/index.md), published via GitHub Pages. Preview locally with
+`uv run --group docs mkdocs serve`.
 
 ## Credits
 
